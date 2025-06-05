@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC8 Problem Bank - by Bin. LI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AMC8 Combintorial and Probability </h1>
+    <div id="level-selection-container">
+        <h2>Choose a Difficulty Level:</h2>
+        <div class="level-record">
+            <button data-level="1">Level 1 (Problems 1-17)</button>
+            <div id="level1-record" class="problem-dots"></div>
+        </div>
+        <div class="level-record">
+            <button data-level="2">Level 2 (Problems 18-23)</button>
+            <div id="level2-record" class="problem-dots"></div>
+        </div>
+        <div class="level-record">
+            <button data-level="3">Level 3 (Problems 24-25)</button>
+            <div id="level3-record" class="problem-dots"></div>
+        </div>
+    </div>
+    <div id="problem-container">
+        <img id="problem-image" src="" alt="Math Problem">
+        <div id="level-progress" class="problem-dots"></div>
+        <div id="answer-input-container">
+            <div id="option-buttons">
+                <button class="option-btn" data-option="A">A</button>
+                <button class="option-btn" data-option="B">B</button>
+                <button class="option-btn" data-option="C">C</button>
+                <button class="option-btn" data-option="D">D</button>
+                <button class="option-btn" data-option="E">E</button>
+            </div>
+        </div>
+    </div>
+    <div id="answer-container" style="text-align: center; margin: 2rem 0;">
+        <div id="answer-display" style="display: none; margin-top: 10px; padding: 1.5rem; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <p><strong>正确答案:</strong> <span id="correct-answer-text"></span></p>
+            <div id="feedback-container" style="margin-top: 10px; display: flex; gap: 1rem; justify-content: center;">
+                <button id="feedback-yes" style="background-color: #28a745;">是</button>
+                <button id="feedback-no" style="background-color: #dc3545;">否</button>
+            </div>
+        </div>
+    </div>
+    <div id="navigation-container" style="display: none;">
+        <button id="prev-problem">上一题</button>
+        <button id="next-problem">下一题</button>
+        <button id="return-to-menu">返回主菜单</button>
+    </div>
+
+    <div class="dancing-emoji">🤡</div>
+
+    <script src="script.obfuscated.js"></script>
+</body>
+</html>
